@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/javascript.js" defer></script>
+    <link rel="stylesheet" href="stijl/stijl.css">
+    <link rel="shortcut icon" href="images/gameicon.ico" type="image/x-icon">
+    <title>Fighter</title>
+</head>
+<body>
+    <section class="intro">
+        <h3>This is definitely not Pokemon</h3>
+        <div>
+            <img src="images/catpixel.png" alt="cat on fire">
+            <img src="images/fishpixel.png" alt="fish with lantern">
+            <img src="images/batpixel.png" alt="bat with leaves for ears">
+        </div>
+        <button id="start">Start game</button>
+    </section>
+    <section>
+        <img class="win" src="images/confetti.png" alt="confetti">
+        <h1>Totally not a Pokemon Fight</h1>
+    </section>
+    <section class="game">
+        <section class="user">
+            <section class="characteroptions">
+                <p>Characters</p>
+                <div>
+                    <img id="catpixel" src="images/catpixel.png" alt="pixelimage van poes">
+                    <img id="fishpixel" src="images/fishpixel.png" alt="pixelimage van vis">
+                    <img id="batpixel" src="images/batpixel.png" alt="pixelimage van vleermuis">
+                </div>
+            </section>
+            <section class="character">
+                <img id="bat" src="images/bat.png" alt="chosen character">
+            </section>
+            <section class="hp"><!--https://stackoverflow.com/questions/20277052/how-to-make-a-health-bar-->
+                <p>HP</p>
+                <progress id="userhealth" value="100" max="100"></progress>
+            </section>
+            <section class="actions">
+                <button id="hit">HIT</button>
+                <button id="kick">KICK</button>
+                <button id="scream">SCREAM</button>
+            </section>
+        </section>
+        <section>
+            <h2>hitormiss</h2>
+        </section>
+        <section class="foe">
+            <section class="hp">
+                <p>HP</p>
+                <progress id="foehealth" value="100" max="100"></progress>
+            </section>
+            <section>
+                <img id="foe" src="images/foe.png" alt="enemy anteater mole thing">
+            </section>
+        </section>
+    </section>
+</body>
+</html>
